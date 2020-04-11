@@ -4,11 +4,14 @@ import Article from "./pages/Article.svelte";
 import Private from "./pages/Private.svelte";
 import Login from "./pages/Login.svelte";
 import Error from "./pages/Error.svelte";
-
-export default [
-  {
+import Snip from "./package/App.svelte";
+export default [{
     path: "/",
     component: Home
+  },
+  {
+    path: "/snip",
+    component: Snip
   },
   {
     path: "/blog",
